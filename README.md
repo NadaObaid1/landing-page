@@ -1,9 +1,28 @@
 # Landing Page Project
 
-## Instructions
+## Description
+This project dynamically builds a navigation menu based on sections in the HTML, highlights sections in the viewport, and smoothly scrolls to sections when navigation items are clicked.
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+## Usage
+1. Open index.html in your browser.
+2. Use the navigation menu to scroll to different sections.
+3. Scroll to see the active section highlighted.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## How it works
+- JavaScript dynamically creates navigation items based on sections.
+- The active section is highlighted based on its visibility in the viewport.
+- Smooth scrolling to sections is implemented using scrollIntoView.
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+## Dependencies
+- Web browser that supports JavaScript
+- Internet connection (for Google Fonts and any external libraries used)
+
+## Installation
+There is no special installation required. Simply clone the repository and open `index.html` in your preferred web browser.
+
+## References
+- [Markdown Guide](https://www.markdownguide.org/)
+- [Udacity JavaScript Style Guide](https://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)
+
+## Author
+   Nada Obaid
