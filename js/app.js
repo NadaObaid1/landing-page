@@ -16,8 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Set initial background color for first section link
   const firstLink = document.querySelector(`a[href="#${sections[0].id}"]`);
-  firstLink.style.backgroundColor = 'black';
-  firstLink.style.color = 'white';
   sections[0].classList.add('your-active-class');
   firstLink.classList.add('active');
 
@@ -36,15 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
         section.classList.add('your-active-class');
         link.classList.add('active');
         // Change text color and background of active link
-        link.style.color = 'white';
-        link.style.backgroundColor = 'black';
         activeSection = section;
       } else {
         section.classList.remove('your-active-class');
         link.classList.remove('active');
-        // Reset text color and background of inactive links
-        link.style.color = '';
-        link.style.backgroundColor = '';
       }
     });
     return activeSection;
@@ -67,8 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Function to reset styles of the first link in the navigation
   const resetFirstLinkStyles = () => {
-    firstLink.style.backgroundColor = 'black';
-    firstLink.style.color = 'white';
     if (!isInViewport(sections[0])) {
       firstLink.classList.remove('active');
     }

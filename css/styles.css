@@ -88,6 +88,12 @@ section {
     transition: ease 0.3s all;
 }
 
+nav ul li a.active {
+    background: black !important;
+    color: #fff !important;
+}
+
+
 /* Header Styles */
 .page__header {
     background: #fff;
@@ -222,9 +228,6 @@ section.your-active-class .landing__container::after {
 	}
 }
 
-
-
-
 /* Scroll to top button */
 #scrollTopBtn {
     display: none; /* Hidden by default */
@@ -244,4 +247,117 @@ section.your-active-class .landing__container::after {
 
 #scrollTopBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*responsive*/
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+        margin: 1em 0.5rem;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    section {
+        min-height: 60vh;
+    }
+
+    .landing__container {
+        padding: 1em;
+    }
+
+    .navbar__menu .menu__link {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .navbar__menu {
+        position: relative;
+    }
+
+    #scrollTopBtn {
+        padding: 10px;
+        font-size: 16px;
+        bottom: 15px;
+        right: 20px;
+    }
+}
+
+/* الأجهزة اللوحية */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+    h1 {
+        font-size: 4em;
+        margin: 2em 2rem;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
+    section {
+        min-height: 70vh;
+    }
+
+    .landing__container {
+        padding: 2em;
+    }
+
+    .navbar__menu .menu__link {
+        padding: 0.75em;
+        font-size: 15px;
+    }
+}
+
+/* الأجهزة الكبيرة */
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    h1 {
+        font-size: 5em;
+        margin: 2em 3rem;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    section {
+        min-height: 80vh;
+    }
+
+    .landing__container {
+        padding: 3em;
+    }
+
+    .navbar__menu .menu__link {
+        padding: 1em;
+        font-size: 17px;
+    }
+}
+
+/* الأجهزة الأكبر */
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 7em;
+        margin: 2em 4rem 1em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    section {
+        min-height: 90vh;
+    }
+
+    .landing__container {
+        padding: 4em;
+    }
+
+    .navbar__menu .menu__link {
+        padding: 1em;
+        font-size: 18px;
+    }
 }
